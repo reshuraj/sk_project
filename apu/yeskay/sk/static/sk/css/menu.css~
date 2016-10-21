@@ -1,0 +1,48 @@
+/* CSSTerm.com Simple Horizontal DropDown CSS menu */
+#drop_menu {
+
+padding:10px;
+margin:1px;
+list-style-type:none;
+height:49px;
+}
+#drop_menu li { float:left; }
+#drop_menu li a {
+padding:2px 20px;
+display:block;
+color:inherit;
+text-decoration:none;
+font-size:18px ;
+font-family: 'Hind Vadodara';
+}
+
+/* Submenu */
+#drop_menu ul {
+
+position:absolute;
+left:-9999px;
+top:-9999px;
+list-style-type:none;
+}
+#drop_menu li:hover { 
+position:relative; 
+color:white; }
+#drop_menu li:hover ul {
+left:0px;
+top:30px;
+background:rgba(144, 143, 143, 0.52);
+
+padding:0px;
+}
+ 
+#drop_menu li:hover ul li a {
+padding:5px;
+display:block;
+width:250px;
+text-indent:10px;
+
+}
+#drop_menu li:hover ul li a:hover { 
+color:black; 
+width:250px;
+}
